@@ -28,4 +28,4 @@ archive: true
 notifications:
  email: false
 #parallelized_test : true
-build_image: vidyar/sample_python
+build_image: shippableimages/ubuntu1204_python:0.0.1
