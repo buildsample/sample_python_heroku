@@ -28,4 +28,4 @@ archive: true
 notifications:
  email: false
 #parallelized_test : true
-build_image: shippableimages/ubuntu1204_python:0.0.1
+build_image: shippableimages/ubuntu1204_python
