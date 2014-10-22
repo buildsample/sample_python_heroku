@@ -30,4 +30,4 @@ notifications:
 #parallelized_test : true
 build_image: shippableimages/ubuntu1404_python
 #build_image: shippableimages/ubuntu1204_base:0.0.1
-cache: true
+
