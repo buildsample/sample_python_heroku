@@ -1,12 +1,12 @@
 language: python
 
 python:
- # - 2.6
- # - 2.7
+  - 2.6
+  - 2.7
   - 3.2
   - 3.3
   - 3.4
-  #- pypy
+  - pypy
 
 install:
   - pip install -r requirements.txt
@@ -28,6 +28,6 @@ archive: true
 notifications:
  email: false
 #parallelized_test : true
-build_image: shippableimages/ubuntu1404_python
+build_image: shippable/minv2
 #build_image: shippableimages/ubuntu1204_base:0.0.1
-cache: true
+#cache: true
