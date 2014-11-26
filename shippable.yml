@@ -25,8 +25,9 @@ script:
 
 archive: true
 
+
 notifications:
- email: false
+ email: vidya@shippable.com
 #parallelized_test : true
 build_image: shippable/minv2
 #build_image: shippableimages/ubuntu1204_base:0.0.1
