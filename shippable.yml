@@ -32,4 +32,4 @@ notifications:
 #build_image: shippableimages/ubuntu1204_base:0.0.1
 
 after_success:
-   - git push git@heroku.com:python-prd.git $BRANCH
+   - git push -f git@heroku.com:python-prd.git ubuntu14.04:master
