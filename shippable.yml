@@ -21,7 +21,8 @@ script:
  #- . ve/bin/activate
  - sudo apt-get install -y python-dev
  - sudo pip install -r requirements.txt
- - mkdir -p vidyar/testresults vidyar/codecoverage
- - nosetests test.py --with-xunit --xunit-file=vidyar/testresults/nosetests.xml
+ - mkdir -p shippable/testresults shippable/codecoverage
+ - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
  - which python && coverage run --branch test.py
- - which python && coverage xml -o vidyar/codecoverage/coverage.xml test.py
+ - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
+ 
