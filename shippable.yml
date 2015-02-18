@@ -19,6 +19,7 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - echo $BUILD_NUMBER
+  - echo $REPO_NAME
 
 archive: true
 
