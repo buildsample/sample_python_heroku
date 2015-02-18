@@ -22,15 +22,13 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - echo $BUILD_NUMBER
+  - echo $BUILD_URL
 
 archive: true
 
 
 notifications:
  email: vidya@shippable.com
-#parallelized_test : true
+
+
 build_image: shippable/minv2
-#build_image: shippableimages/ubuntu1204_base:0.0.1
-#cache: true
-#after_success:
- #   - git push git@heroku.com:python-prd.git $BRANCH
