@@ -28,9 +28,8 @@ archive: true
 
 notifications:
  email: vidya@shippable.com
-#parallelized_test : true
+
 build_image: shippable/minv2
-#build_image: shippableimages/ubuntu1204_base:0.0.1
-#cache: true
-#after_success:
- #   - git push git@heroku.com:python-prd.git $BRANCH
+
+after_success:
+  - git push git@heroku.com:python-prd.git $BRANCH
